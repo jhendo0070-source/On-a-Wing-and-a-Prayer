@@ -116,10 +116,10 @@ def calculate_deflection() :    # Gather variable choices
         y = (w * x**2 / (24 * E * I)) * (6 * L_wing**2 - 4 * L_wing * x + x**2)
         positions.append(x)
         deflection.append(y)
-    print("Deflection along the wing:")
-    for i in range(len(positions)) :
-        print("x = {:.2f}m, deflection = {:.6f}m".format(positions[i], deflection[i]))
-    print()
+    #print("Deflection along the wing:")
+    #for i in range(len(positions)) :
+    #    print("x = {:.2f}m, deflection = {:.6f}m".format(positions[i], deflection[i]))
+    #print()
  
     #Plot visualizing wing deflection
     for i in range(len(positions)):
@@ -141,4 +141,5 @@ def calculate_deflection() :    # Gather variable choices
  
     
 if __name__ == "__main__" :
+
     calculate_deflection()
